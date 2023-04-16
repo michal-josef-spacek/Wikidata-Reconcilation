@@ -80,9 +80,12 @@ sub reconcile {
 }
 
 sub _reconcile {
-	my ($self, @params) = @_;
+	my ($self, $reconcilation_rules_hr) = @_;
 
 	err "This is abstract class. You need to implement _reconcile() method.";
+	my @sparql;
+
+	return @sparql;
 }
 
 1;
