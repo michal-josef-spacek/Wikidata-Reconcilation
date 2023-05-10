@@ -6,6 +6,7 @@ use warnings;
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use LWP::UserAgent;
+use Unicode::UTF8 qw(encode_utf8);
 use WQS::SPARQL;
 use WQS::SPARQL::Result;
 
@@ -60,10 +61,12 @@ sub reconcile {
 
 	my $ret_hr;
 	my %qids;
+	if ($self->{'verbose'}) {
+		print "SPARQL queries:\n";
+	}
 	foreach my $sparql (@sparql) {
 		if ($self->{'verbose'}) {
-			print "SPARQL query:\n";
-			print $sparql."\n";
+			print encode_utf8($sparql)."\n";
 		}
 
 		$ret_hr = $self->{'_q'}->query($sparql);
@@ -73,6 +76,12 @@ sub reconcile {
 		}
 		if (@ret && $self->{'first_match'}) {
 			last;
+		}
+	}
+	if ($self->{'verbose'}) {
+		print "Results:\n";
+		foreach my $item (sort keys %qids) {
+			print '- '.$item.': '.$qids{$item}."\n";
 		}
 	}
 
