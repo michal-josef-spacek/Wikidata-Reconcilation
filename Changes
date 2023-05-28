@@ -1,4 +1,5 @@
 0.02
+ - Forward verbose param to WQS::SPARQL::Result.
 
 0.01 2023-05-26T15:15:01+02:00
  - First version.

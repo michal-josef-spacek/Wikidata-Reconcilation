@@ -27,7 +27,7 @@ requires:
   LWP::UserAgent: 0
   Unicode::UTf8: 0
   WQS::SPARQL: 0
-  WQS::SPARQL::Result: 0
+  WQS::SPARQL::Result: 0.02
   perl: 5.6.2
 resources:
   bugtracker: https://github.com/michal-josef-spacek/Wikidata-Reconcilation/issues

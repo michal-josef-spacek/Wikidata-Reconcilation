@@ -70,7 +70,9 @@ sub reconcile {
 		}
 
 		$ret_hr = $self->{'_q'}->query($sparql);
-		my @ret = map { $_->{'item'} } WQS::SPARQL::Result->new->result($ret_hr);
+		my @ret = map { $_->{'item'} } WQS::SPARQL::Result->new(
+			'verbose' => $self->{'verbose'},
+		)->result($ret_hr);
 		foreach my $ret (@ret) {
 			$qids{$ret}++;
 		}
