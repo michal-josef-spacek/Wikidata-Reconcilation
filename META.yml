@@ -35,4 +35,4 @@ resources:
   homepage: https://github.com/michal-josef-spacek/Wikidata-Reconcilation
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/michal-josef-spacek/Wikidata-Reconcilation
-version: '0.02'
+version: '0.03'
