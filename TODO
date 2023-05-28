@@ -4,7 +4,9 @@ TODO
 3. Multiple values like isbn
 5. Add SEE ALSO links.
 6. Improve verbose output.
-7.
+7. After adding support of multivalue to WQS::SPARQL::Query::Select, simplify
+   example in doc.
+8.
 
 Applied
 =======
