@@ -2,7 +2,6 @@ TODO
 ====
 2. Tests
 3. Multiple values like isbn
-4. Finish example in doc.
 5. Add SEE ALSO links.
 6. Improve verbose output.
 7.
@@ -11,3 +10,6 @@ Applied
 =======
 1. Doc
 OK [20230526] skim
+
+4. Finish example in doc.
+OK [20230528] skim
