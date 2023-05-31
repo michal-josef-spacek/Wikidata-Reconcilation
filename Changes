@@ -1,4 +1,5 @@
 0.03
+ - Add helper method _exists_id().
 
 0.02 2023-05-28T11:32:04+02:00
  - Finish example in doc.

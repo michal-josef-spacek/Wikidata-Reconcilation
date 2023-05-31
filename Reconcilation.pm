@@ -99,6 +99,18 @@ sub _reconcile {
 	return @sparql;
 }
 
+sub _exists_id {
+	my ($self, $reconcilation_rules_hr, $id) = @_;
+
+	if (exists $reconcilation_rules_hr->{'identifiers'}->{$id}
+		&& defined $reconcilation_rules_hr->{'identifiers'}->{$id}) {
+
+		return 1;
+	} else {
+		return 0;
+	}
+}
+
 1;
 
 __END__
