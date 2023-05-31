@@ -266,7 +266,7 @@ L<WQS::SPARQL::Result>.
 
 =item L<Wikidata::Reconcilation::Periodical>
 
-TODO
+Wikidata reconcilation class for periodical.
 
 =back
 

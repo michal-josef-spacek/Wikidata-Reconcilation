@@ -126,7 +126,7 @@ DEPENDENCIES
 
 SEE ALSO
     Wikidata::Reconcilation::Periodical
-        TODO
+        Wikidata reconcilation class for periodical.
 
 REPOSITORY
     <https://github.com/michal-josef-spacek/Wikibase-Reconcilation>
