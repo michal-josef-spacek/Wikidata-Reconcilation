@@ -1,5 +1,6 @@
 0.03
  - Add helper method _exists_id().
+ - Fix dependency name.
 
 0.02 2023-05-28T11:32:04+02:00
  - Finish example in doc.
